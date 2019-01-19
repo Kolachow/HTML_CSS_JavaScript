@@ -104,3 +104,12 @@ h3 {
     background: #29487d;
     cursor: pointer;
 }
+#description > div {
+    margin-top: 2rem;
+}
+footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    text-align: center;
+    color: #ffff;
+}
