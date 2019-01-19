@@ -113,3 +113,23 @@ footer {
     text-align: center;
     color: #ffff;
 }
+@media screen and (min-width: 768px) {
+    li > a {
+        padding: 2rem 5rem;
+    }
+    #description {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #description > div {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .weather {
+        min-height: 15.5rem;
+        width: 20rem;
+        position: absolute;
+        right: 0;
+    }
+}
