@@ -10,6 +10,7 @@ html {
 body {
     font-size: 1.6rem;
     min-height: 100vh;
+    transition: all 1s ease-in-out;
 }
 .background-white {
     background: #ffff;
@@ -25,6 +26,26 @@ body {
 .background-yellow {
     background: #c7900a;
 }
+.loader {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 1rem solid #d3d3d3;
+    border-top: 1rem solid #4267b2;
+    margin: auto;
+    margin-top: 1rem;
+    animation: loader 2s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
 nav {
     margin: 0 auto;
     max-width: 110rem;
@@ -112,7 +133,13 @@ footer {
     padding: 1rem;
     text-align: center;
     color: #ffff;
+    transition: all 1s ease-in-out;
 }
+
+header {
+    transition: all 1s ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
     li > a {
         padding: 2rem 5rem;
